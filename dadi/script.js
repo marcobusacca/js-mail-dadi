@@ -47,7 +47,7 @@ for (let i = 1; i <= games; i++){
     ${user_number_output}
     ${computer_number_output}
     
-    Partite Svolte : ${i}
+    Partita N° : ${i}
     `);
 
     // INCREMENTO VARIABILE USER WIN
@@ -60,7 +60,7 @@ for (let i = 1; i <= games; i++){
         ${user_number_output}
         ${computer_number_output}
         
-        Partite Svolte : ${i}
+        Partita N° : ${i}
         `);
 
         // INCREMENTO VARIABILE USER LOSE
@@ -73,7 +73,7 @@ for (let i = 1; i <= games; i++){
         ${user_number_output}
         ${computer_number_output}
         
-        Partite Svolte : ${i}
+        Partita N° : ${i}
         `);
 
         // INCREMENTO VARIABILE PAREGGI
