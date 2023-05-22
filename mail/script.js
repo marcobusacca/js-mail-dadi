@@ -18,14 +18,14 @@ for (let i = 0; i < mail_list.length; i++){
         // ESITO CONTROLLO POSITIVO
         control_result = true;
     }
+}
 
-    // SE L'ESITO DEL CONTROLLO È STATO POSITIVO, ALLORA AVVERTI L'UTENTE CHE PUÒ ACCEDERE
-    if(control_result === true){
+// SE L'ESITO DEL CONTROLLO È STATO POSITIVO, ALLORA AVVERTI L'UTENTE CHE PUÒ ACCEDERE
+if(control_result === true){
 
-        alert("La tua email ci risulta! Hai il permesso per accedere, clicca 'OK' per proseguire!");
+    alert("La tua email ci risulta! Hai il permesso per accedere, clicca 'OK' per proseguire!");
 
-    } else if (i === mail_list.length - 1){ // L'ESITO DEL CONTROLLO È STATO NEGATIVO, AVVERTI L'UTENTE CHE NON PUÒ ACCEDERE
+} else{ // L'ESITO DEL CONTROLLO È STATO NEGATIVO, AVVERTI L'UTENTE CHE NON PUÒ ACCEDERE
 
-        alert("La tua email non risulta nei nostri Database. Non hai il permesso per accedere!");
-    }
+    alert("La tua email non risulta nei nostri Database. Non hai il permesso per accedere!");
 }
