@@ -6,6 +6,5 @@ let mail_list = ["luca@gmail.com", "marco@gmail.com", "paolo@gmail.com"];
 // PROMPT RICHIESTA EMAIL ALL'UTENTE
 const user_mail = prompt('Inserisci la tua email:');
 
-
 // DICHIARAZIONE VARIABILE ESITO CONTROLLO
- let control_result = false;
+let control_result = false;
