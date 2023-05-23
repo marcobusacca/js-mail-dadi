@@ -14,10 +14,11 @@ PROBLEMA : Creare un programma che chiede all’utente la sua email, controlla c
 
         4.1.1 - Il valore della variabile di tipo booleana diventa "TRUE";
 
-    4.2 - ? SE Il valore della variabile di tipo booleana è "TRUE" ALLORA
 
-        4.2.1 - Stampa un messaggio per l'utente con esito Positivo del controllo;
 
-    4.3 - ALTRIMENTI Stampa un messaggio per l'utente con esito Negativo del controllo.
+5 - ? SE Il valore della variabile di tipo booleana è "TRUE" ALLORA
 
+    5.1 - Stampa un messaggio per l'utente con esito Positivo del controllo;
+
+6 - ALTRIMENTI Stampa un messaggio per l'utente con esito Negativo del controllo.
     
