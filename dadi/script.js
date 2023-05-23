@@ -28,6 +28,12 @@ let user_lose = 0;
 let draw = 0;
 
 
+// CONTROLLO IL VALORE INSERITO DALL'UTENTE NEL PROMPT
+if (isNaN(games)){
+    alert('Devi inserire un numero!');
+}
+
+
 // CICLO FOR PER FAR GIOCARE L'UTENTE PER UN MASSIMO DI N VOLTE
 for (let i = 1; i <= games; i++){
 
@@ -82,75 +88,78 @@ for (let i = 1; i <= games; i++){
 }
 
 // STAMPA ALL'UTENTE I DATI FINALI
-if (user_win !== 1 && user_lose !== 1 && draw !== 1){ // COMBINAZIONE 1
+if (!isNaN(games)){
 
-    alert(`Hai vinto ${user_win} volte !
+    if (user_win !== 1 && user_lose !== 1 && draw !== 1){ // COMBINAZIONE 1
     
-    Hai perso ${user_lose} volte !
+        alert(`Hai vinto ${user_win} volte !
+        
+        Hai perso ${user_lose} volte !
+        
+        Avete pareggiato ${draw} volte !
+        `);
     
-    Avete pareggiato ${draw} volte !
-    `);
-
-} else if (user_win === 1 && user_lose !== 1 && draw === 1){ // COMBINAZIONE 2
-
-    alert(`Hai vinto ${user_win} volta !
+    } else if (user_win === 1 && user_lose !== 1 && draw === 1){ // COMBINAZIONE 2
     
-    Hai perso ${user_lose} volte !
+        alert(`Hai vinto ${user_win} volta !
+        
+        Hai perso ${user_lose} volte !
+        
+        Avete pareggiato ${draw} volta !
+        `);
     
-    Avete pareggiato ${draw} volta !
-    `);
-
-}  else if (user_win !== 1 && user_lose === 1 && draw !== 1){ // COMBINAZIONE 3
-
-    alert(`Hai vinto ${user_win} volte !
+    }  else if (user_win !== 1 && user_lose === 1 && draw !== 1){ // COMBINAZIONE 3
     
-    Hai perso ${user_lose} volta !
+        alert(`Hai vinto ${user_win} volte !
+        
+        Hai perso ${user_lose} volta !
+        
+        Avete pareggiato ${draw} volte !
+        `);
     
-    Avete pareggiato ${draw} volte !
-    `);
-
-}  else if (user_win === 1 && user_lose !== 1 && draw !== 1){ // COMBINAZIONE 4
-
-    alert(`Hai vinto ${user_win} volta !
+    }  else if (user_win === 1 && user_lose !== 1 && draw !== 1){ // COMBINAZIONE 4
     
-    Hai perso ${user_lose} volte !
+        alert(`Hai vinto ${user_win} volta !
+        
+        Hai perso ${user_lose} volte !
+        
+        Avete pareggiato ${draw} volte !
+        `);
     
-    Avete pareggiato ${draw} volte !
-    `);
-
-}  else if (user_win !== 1 && user_lose === 1 && draw === 1){ // COMBINAZIONE 5
-
-    alert(`Hai vinto ${user_win} volte !
+    }  else if (user_win !== 1 && user_lose === 1 && draw === 1){ // COMBINAZIONE 5
     
-    Hai perso ${user_lose} volta !
+        alert(`Hai vinto ${user_win} volte !
+        
+        Hai perso ${user_lose} volta !
+        
+        Avete pareggiato ${draw} volta !
+        `);
     
-    Avete pareggiato ${draw} volta !
-    `);
-
-}  else if (user_win === 1 && user_lose === 1 && draw !== 1){ // COMBINAZIONE 6
-
-    alert(`Hai vinto ${user_win} volta !
+    }  else if (user_win === 1 && user_lose === 1 && draw !== 1){ // COMBINAZIONE 6
     
-    Hai perso ${user_lose} volta !
+        alert(`Hai vinto ${user_win} volta !
+        
+        Hai perso ${user_lose} volta !
+        
+        Avete pareggiato ${draw} volte !
+        `);
     
-    Avete pareggiato ${draw} volte !
-    `);
-
-}  else if (user_win !== 1 && user_lose !== 1 && draw === 1){ // COMBINAZIONE 7
-
-    alert(`Hai vinto ${user_win} volte !
+    }  else if (user_win !== 1 && user_lose !== 1 && draw === 1){ // COMBINAZIONE 7
     
-    Hai perso ${user_lose} volte !
+        alert(`Hai vinto ${user_win} volte !
+        
+        Hai perso ${user_lose} volte !
+        
+        Avete pareggiato ${draw} volta !
+        `);
     
-    Avete pareggiato ${draw} volta !
-    `);
-
-} else{ // COMBINAZIONE 8 (SI PUÒ VERIFICARE SOLO SE LE PARTITE SVOLTE SONO 3)
-
-    alert(`Hai vinto ${user_win} volta !
+    } else{ // COMBINAZIONE 8 (SI PUÒ VERIFICARE SOLO SE LE PARTITE SVOLTE SONO 3)
     
-    Hai perso ${user_lose} volta !
-    
-    Avete pareggiato ${draw} volta !
-    `);
+        alert(`Hai vinto ${user_win} volta !
+        
+        Hai perso ${user_lose} volta !
+        
+        Avete pareggiato ${draw} volta !
+        `);
+    }
 }
