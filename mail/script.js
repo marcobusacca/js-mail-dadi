@@ -21,7 +21,7 @@ for (let i = 0; i < mail_list.length; i++){
 }
 
 // SE L'ESITO DEL CONTROLLO È STATO POSITIVO, ALLORA AVVERTI L'UTENTE CHE PUÒ ACCEDERE
-if(control_result === true){
+if(control_result){
 
     alert("La tua email ci risulta! Hai il permesso per accedere, clicca 'OK' per proseguire!");
 
